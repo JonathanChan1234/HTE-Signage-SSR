@@ -1,0 +1,50 @@
+.clubhouseContainer {
+    width: 1080px;
+    height: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'DejaVu Sans';
+    color: #06a2bf;
+    /* color: #33d9cc; */
+}
+
+.clubhouseDataContainer {
+    display: flex;
+    align-items: center;
+}
+
+.clubhouseDataSection {
+    align-items: center;
+}
+
+.clubhouseDataSection:first-child {
+    margin-right: 10px;
+}
+
+.clubhouseDataIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.clubhouseDataWrapper {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.clubhouseUnitText {
+    font-size: 25px;
+}
+
+.clubhouseDateText {
+    font-size: 25px;
+}
+
+.clubhouseTimeText {
+    font-size: 50px;
+}

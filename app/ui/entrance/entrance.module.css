@@ -1,0 +1,79 @@
+.entranceContainer {
+    height: 396px;
+    width: 1080px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'DejaVu Sans';
+    color: #06a2bf;
+    display: flex;
+    flex-direction: column;
+}
+
+.entranceTopSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+    padding: 0px 80px 0px;
+}
+
+.entranceDatetimeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entranceDateText {
+    font-size: 31.25px;
+}
+
+.entranceTimeText {
+    font-size: 62.5px;
+}
+
+.entranceDataContainer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px 0px;
+}
+
+.entranceDataSectionWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.entranceDataSection {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    margin-top: 26px;
+}
+
+.entranceDataIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-right: 40px;
+}
+
+.entranceDataWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 30px;
+}
+
+.entranceUnitText {
+    font-size: 25px;
+}
+
+.entranceDescriptionText {
+    font-size: 18px;
+}

@@ -1,0 +1,71 @@
+.liftContainer {
+    width: 600px;
+    height: 112px;
+    font-family: 'DejaVu Sans';
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #06a2bf;
+}
+
+.liftDatetimeContainer {
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.liftDateText {
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.liftTimeText {
+    font-size: 45px;
+    line-height: 100%;
+}
+
+.weatherDataContainer {
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weatherIcon {
+    margin-right: 5px;
+}
+
+.weatherDataWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dataText {
+    font-size: 30px;
+    line-height: 100%;
+}
+
+.unitText {
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.warningsContainer {
+    max-width: 76px;
+    height: 76px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.warningIcon {
+    height: 30px;
+    width: 30px;
+    margin: 4px;
+    border-radius: 1px;
+}
