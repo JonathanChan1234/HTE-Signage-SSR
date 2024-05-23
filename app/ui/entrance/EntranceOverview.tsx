@@ -6,10 +6,6 @@ import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './entrance.module.css';
 
-interface EntranceOverviewProps {
-    host: string;
-}
-
 interface BmsData {
     ozone: string;
     pm25: string;
@@ -17,7 +13,7 @@ interface BmsData {
     temperature: string;
 }
 
-export default function EntranceOverview({ host }: EntranceOverviewProps) {
+export default function EntranceOverview() {
     const searchParams = useSearchParams();
     const showPropertyIcon = searchParams.get('icon');
 
@@ -32,11 +28,11 @@ export default function EntranceOverview({ host }: EntranceOverviewProps) {
     });
 
     const fetchBMSData = useCallback(async () => {
-        const response = await fetch(`${host}/api/bms`, { method: 'GET' });
+        const response = await fetch(`${window.location.origin}/api/bms`, { method: 'GET' });
         if (response.status !== 200) return;
         const data = await response.json();
         setBmsParams(data);
-    }, [host]);
+    }, []);
 
     useEffect(() => {
         const intervalId = setInterval(() => {

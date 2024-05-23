@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Lift from './Lift';
 
 export default function Page() {
@@ -7,3 +8,7 @@ export default function Page() {
         </div>
     );
 }
+
+export const metadata: Metadata = {
+    title: 'Lift',
+};

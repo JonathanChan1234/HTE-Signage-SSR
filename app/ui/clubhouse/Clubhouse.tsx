@@ -6,10 +6,6 @@ import Image from 'next/image';
 import styles from './clubhouse.module.css';
 import { useSearchParams } from 'next/navigation';
 
-interface ClubhouseProps {
-    host: string;
-}
-
 interface BmsData {
     ozone: string;
     pm25: string;
@@ -17,7 +13,7 @@ interface BmsData {
     temperature: string;
 }
 
-export default function Clubhouse({ host }: ClubhouseProps) {
+export default function Clubhouse() {
     const searchParams = useSearchParams();
     const showPropertyIcon = searchParams.get('icon');
 
@@ -33,11 +29,11 @@ export default function Clubhouse({ host }: ClubhouseProps) {
     });
 
     const fetchBMSData = useCallback(async () => {
-        const response = await fetch(`${host}/api/bms`, { method: 'GET' });
+        const response = await fetch(`${window.location.origin}/api/bms`, { method: 'GET' });
         if (response.status !== 200) return;
         const data = await response.json();
         setBmsParams(data);
-    }, [host]);
+    }, []);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
